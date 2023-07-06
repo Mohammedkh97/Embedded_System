@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+//function prototype for recursive function
+int product( int n1, int n2);
+
+int main ()
+{
+   int x, y;
+
+   printf("Enter two integers:\n");
+   scanf("%d%d", &x, &y);
+
+   //calling recursive function
+   printf("\nProuduct = %d\n", product(x, y));
+   return 0;
+}
+
+//body of recursive function
+int product(int n1, int n2)
+{
+   if(n2 == 0)
+      return 0;
+
+   if(n2 > 0)
+      return (n1 + product(n1, n2 - 1));
+
+   if(n2 < 0)
+      return -product(n1, -n2);
+}
