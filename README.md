@@ -1,4 +1,4 @@
-This project utilizes the following tools for development:
+These projects utilize the following tools for development:
 
 Microchip Studio – For developing and programming AVR microcontrollers, specifically ATmega series.
 STM32CubeIDE – For STM32 microcontroller development, including project setup, debugging, and code generation.
